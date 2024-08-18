@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nabla&family=New+Amsterdam&family=Roboto&family=Workbench&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nabla", system-ui;
+}
+
+.body{
+    background-image: url("/Snake-Game/img/background.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: rgb(125, 157, 76);
+    width: 70vmin;
+    height: 75vmin;
+    border: 1px solid white;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-color: rgb(40, 104, 40);
+    border: 1px solid white;
+    border-radius: 0.5px;
+    transform: scale(1.05);
+}
+
+.snake{
+    background-color: rgb(17, 143, 17);
+    border: 1px solid black;
+    border-radius: 5px;
+    transform: scale(.90);
+}
+
+.food{
+    background: linear-gradient(crimson,maroon);
+    border: 3px solid green;
+    border-radius: 3px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 100px;
+    right: 1600px;
+    font-size: 40px;
+    font-weight: bold;
+}
